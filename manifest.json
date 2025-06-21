@@ -1,13 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "Save to Covet",
-  "description": "Save Pinterest pins to your Covet app.",
+  "name": "Save to Clovet",
+  "description": "Save Pinterest pins to your Clovet app.",
   "version": "1.0",
   "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": ["https://*.pinterest.com/*"],
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "icon.png"
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "128": "icon.png"
   },
   "background": {
     "service_worker": "background.js"
